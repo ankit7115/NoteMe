@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('',views.getTodos),
     path('todo/',views.getTodos),
     path('todo/create/',views.createTodo),
     path('todo/<str:pk>/',views.getTodo),
