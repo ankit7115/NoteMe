@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'todo_backend.wsgi.application'
 #     }
 # }
 DATABASES = {
-    "default" : dj_database_url.parse(os.environ.get("postgresql://notemedb_user:sHEw5NGABtQlIysh7HATtBHYzBrHFX9X@dpg-cq19cn2ju9rs73bifbm0-a.oregon-postgres.render.com/notemedb")),
+    "default" : dj_database_url.parse(os.environ.get("DATABASE_URL")),
 }
 
 # Password validation
